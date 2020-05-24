@@ -120,6 +120,7 @@ def instabot():
     #spoof a mobile instance of chrome
     chrome_options.add_argument("--window-size=200,700")
     chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
+    #set path to chromedriver.exe on user machine
     driver = webdriver.Chrome(executable_path="C:/Users/dallo/AppData/Local/Programs/Python/Python37-32/chromedriver.exe",options=chrome_options)
 
     #Load Instagram
